@@ -41,13 +41,26 @@ int main(int argc, const char * argv[]) {
     }   // End of loop
     
     // Display output
+    // Displays Program description
+    cout << "====================" << endl;
+    cout << "This program rolls  " << endl;
+    cout << "two dice " << TOTAL_ROLLS << " times" << endl;
+    cout << "and displays how    " << endl;
+    cout << "many times each     " << endl;
+    cout << "outcome is rolled.  " << endl;
+    cout << "====================" << endl;
+    // Headers for output
     cout << "Roll        Total" << endl;
+    cout << "--------------------" << endl;
     // Use for loop to display the roll and the totals
     // i is the index/roll, starting at the roll of 2
     for (int i = 2; i <= SUM_OF_ROLLS; i++) {
         // Print the roll and the totals
         cout << setw(3) << i << setw(13) << pointCount[i] << endl;
     }   // End of print loop
+    
+    // Line for formatting
+    cout << "====================" << endl;
     return 0;
 }
 
